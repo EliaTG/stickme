@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "@fontsource/space-grotesk/latin-400.css";
+@import "@fontsource/space-grotesk/latin-500.css";
+
+@theme {
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+}
+
+@layer base {
+:root {
+  font-family: var(--font-sans);
+  color: #171717;
+  background: #f4f4f4;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+
+}

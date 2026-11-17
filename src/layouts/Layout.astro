@@ -1,0 +1,22 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+}
+
+const { title = 'Stick Me' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Stick Me — an interactive character experiment." />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
